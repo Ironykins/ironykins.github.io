@@ -1,2 +1,2 @@
 # ironykins.github.io
-Ironykins github page
+This is my personal github site. Generic blurb about a personal homepage.

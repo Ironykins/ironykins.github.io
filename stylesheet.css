@@ -1,0 +1,15 @@
+body {
+    background-color: black;
+    color: green;
+    font-family: courier;
+}
+
+.center {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    position: relative;
+    top: 10%;
+    #transform: translateY(-50%);
+}
+
