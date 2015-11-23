@@ -1,6 +1,3 @@
 [submodule "ironigma"]
 	path = ironigma
 	url = https://github.com/Ironykins/ironigma.git
-[submodule "Fighting-Game-Hotseat"]
-	path = Fighting-Game-Hotseat
-	url = git@github.com:Ironykins/Fighting-Game-Hotseat.git
