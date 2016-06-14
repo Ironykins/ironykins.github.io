@@ -1,49 +1,73 @@
 <html>
 <head>
-    <title>Ironykins</title>
+    <title>Konrad Aust</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <link rel="stylesheet" type="text/css" href="w3.css">
-    <script type="text/javascript">
-    function onLoad()
-    {
-        var str = "Fox Pictures. Cryptography. Shitty code.\n\n\nHoping to one day gain sentience.\n\n\nClick the fox picture above to go to my shitty blog."
-        var str2 = "(Click the fox face)"
-        setText('header','Ironykins',100)
-        setTimeout(function() {setText('textArea',str,25)},1500)
-        //setTimeout(function() {setText('sidePanel',str2)},1500)
-
-    }
-
-    function setText(id,text,rate)
-    {
-        var index = 0;
-        var textAdder = setInterval(function(){ 
-            // document.getElementById(id).innerHTML += text.charAt(index) + '|';
-            var elem = document.getElementById(id)
-            elem.innerHTML = elem.innerHTML.substring(0,elem.innerHTML.length - 1) + text.charAt(index) + '|';
-
-            if (++index >= text.length){
-                clearInterval(textAdder);
-            }
-        }, rate);
-    }
-
-    </script>
+    <!-- Latest compiled and minified JavaScript -->
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </head>
 <body onload="onLoad()">
-    <div class="w3-topnav w3-dark-green">
-        Hosted Projects:
-        <a href="ironigma/index.html">Ironigma Enigma Machine Emulator</a>
-        <a href="Fighting-Game-Hotseat/index.html">Fighting Game Hotseat Program</a>
-    </div>
-    <div class="center">
-        <a href="http://blog.austhaus.com">
-            <img id="f0x0rz" src="f0x0rz.svg"/>
-        </a>
-        <div>
-            <h1 id="header"></h1>
-            <pre id="textArea"></pre> 
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+			<img class="brandImage" alt="Brand" src="f0x0rz.svg">
+		  </a>
         </div>
+        <div id="navbar" class="navbar-collapse collapse">
+		  <ul class="nav navbar-nav">
+            <li><a href="http://www.austhaus.com">Homepage</a></li>
+            <li><a href="http://github.com/ironykins">Github</a></li>
+            <li><a href="http://blog.austhaus.com">Blog</a></li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!--[> Main jumbotron for a primary marketing message or call to action <]-->
+    <div class="jumbotron">
+      <div class="container">
+        <!--<img src="f0x0rz.svg" class="img-responsive center-block pagetop" alt="Responsive image">-->
+        <br>
+        <h1>Konrad Aust</h1>
+        <p>Hey Internet!</p>
+        <p>My name is Konrad Aust. I am a full stack software developer from Calgary, Alberta, with an interest in cryptography and computer security.</p>
+        <p><a class="btn btn-primary btn-lg" href="ktaust-resume.pdf" role="button">View Resume &raquo;</a></p>
+      </div>
     </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Development</h2>
+          <p>I am a full stack software developer, with a great deal of experience in C# .NET and Javascript. I am comfortable working in a small team, and </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Security</h2>
+          <p></p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Administration</h2>
+          <p>I have done a great deal of systems administration work, on both Linux and Windows. I am familiar with Windows technologies such as Active Directory and Group Policy, as well as Linux architecture and process management daemons. I have built and maintained continuous integration pipelines for large scale software projects, and I have managed cloud resources using Amazon AWS.</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; 2016 Konrad Aust</p>
+      </footer>
+    </div> <!-- /container -->
+
 </body>
 </html>
